@@ -1,0 +1,28 @@
+img.homePage_icon {
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.homePage_icon {
+    position: absolute;
+    left: 0px;
+}
+
+.menu_bar {
+    position: absolute;
+    right: 0px;
+}
+
+.header {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    top: 80px;
+}
+
+.goalSetting {
+    position: relative;
+}
