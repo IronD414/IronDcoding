@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
     <div class="header">
         <button class="homePage_icon" type="button" onclick="location.href='HomePage.html'"><img class="homePage_icon" src="https://img.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"></button>
@@ -18,16 +19,16 @@
     </div>
     <div class="container">
         <div class="goalSetting">
-            <form action="save_point.php">
+            <form>
                 <h2>목표를 설정하세요.</h2>
                 <div class="goalSetting_input">
                     <div class="goalSetting_input_1">
                         <span>목표 주제:</span>
-                        <input type="text" placeholder="ex) 매일 6시에 일어나기" style="width: 300px;">
+                        <input id="goal_subject" type="text" placeholder="ex) 매일 6시에 일어나기" style="width: 300px;">
                     </div>
                     <div class="goalSetting_input_2">
                         <span>목표 설명:</span>
-                        <input type="text" placeholder="ex) dfdffd" style="width: 400px; height: 150px;">
+                        <input id="goal_description" type="text" placeholder="ex) dfdffd" style="width: 400px; height: 150px;">
                     </div>
                     <div class="goalSetting_input_3">
                         <span>설정 기한:</span>
@@ -35,10 +36,15 @@
                     </div>
                 </div>
                 <input type="reset">
-                <input type="submit" value="확인">
+                <input type="submit" value="확인" onclick="save()">
             </form>
         </div>
         
     </div>
+    <script>
+        function save() {
+            alert($("#goal_subject").val());
+        }
+    </script>
 </body>
 </html>
