@@ -1,28 +1,22 @@
-img.homePage_icon {
-    width: 50px;
-    height: 40px;
-    object-fit: cover;
+#header {
+    position: relative;
 }
 
-.homePage_icon {
+.icon {
     position: absolute;
-    left: 0px;
 }
 
-.menu_bar {
+#menu_bar {
     position: absolute;
     right: 0px;
 }
 
-.header {
-    position: relative;
-}
-
-.container {
-    position: relative;
-    top: 80px;
-}
-
-.goalSetting {
-    position: relative;
+#homePage_icon {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    background-image: url("https://img.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF")
 }
