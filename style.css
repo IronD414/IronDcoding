@@ -1,22 +1,27 @@
 #header {
-    position: relative;
+    position: static;
+    top: 10px;
+    left: 20px;
 }
 
+#container {
+    position: static;
+}
+/*
 .icon {
     position: absolute;
 }
 
 #menu_bar {
-    position: absolute;
-    right: 0px;
+    right: 20px;
 }
-
+*/
 #homePage_icon {
     height: 50px;
     width: 50px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid black;
+    border: none;
     background-image: url("https://img.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF")
 }
